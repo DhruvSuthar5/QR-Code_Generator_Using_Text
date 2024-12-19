@@ -9,8 +9,7 @@ body {
   align-items: center;
   margin: 20px auto;
 }
-video,
-canvas {
+video, canvas {
   width: 100%;
   max-width: 400px;
 }
@@ -18,5 +17,8 @@ canvas {
   margin-top: 20px;
 }
 .code-section {
+  margin-top: 20px;
+}
+#capture-text {
   margin-top: 20px;
 }
