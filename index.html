@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR & Barcode Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>QR & Barcode Generator</h1>
+    <div id="camera-container">
+        <video id="camera" autoplay playsinline></video>
+        <button id="capture-text">Capture Text</button>
+    </div>
+    <div id="output">
+        <h3>Detected Text:</h3>
+        <p id="detected-text"></p>
+        <div class="code-section">
+            <h3>QR Code:</h3>
+            <div id="qr-code"></div>
+        </div>
+        <div class="code-section">
+            <h3>Barcode:</h3>
+            <canvas id="barcode"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/2.1.1/tesseract.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="/App/app.js"></script>
+</body>
+</html>

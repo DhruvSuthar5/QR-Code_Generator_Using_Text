@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+#camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+video,
+canvas {
+  width: 100%;
+  max-width: 400px;
+}
+#output {
+  margin-top: 20px;
+}
+.code-section {
+  margin-top: 20px;
+}
